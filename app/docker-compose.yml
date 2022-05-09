@@ -3,45 +3,36 @@ services:
   frontend:
     build: ./frontend
     container_name: app_frontend
-    networks:
-      - network_frontend
+    ports:
+      - 3000:3000
     depends_on:
       backend:
         condition: service_healthy
-    # Os `healthcheck` devem garantir que a aplicação
-    # está operacional, antes de liberar o container
+     #Os `healthcheck` devem garantir que a aplicação
+     #está operacional, antes de liberar o container
     healthcheck:
       test: ["CMD", "lsof", "-t", "-i:3000"]  # Caso utilize outra porta interna para o front, altere ela aqui também
       timeout: 10s
       retries: 5
-      environment:
-       - REACT_APP_API_PORT=3001
-       - SKIP_PREFLIGHT_CHECK=true
-      ports:
-       - 3000:3000
   backend:
     build: ./backend
     container_name: app_backend
-    networks:
-      - network_backend
-      - network_frontend
+    ports:
+     - 3001:3001
     depends_on:
       db:
         condition: service_healthy
     environment:
       - PORT=3001
-      # Os dados abaixo se referem ao container `db`
-      # Dica: Relembre aqui da comunicação interna entre containers
+       #Os dados abaixo se referem ao container `db`
+       #Dica: Relembre aqui da comunicação interna entre containers
       - DB_USER=root
       - DB_PASS=123456
       - DB_HOST=db
       - DB_NAME=TRYBE_FUTEBOL_CLUBE
       - DB_PORT=3306
-    ports:
-      - 3001:3001
-
     healthcheck:
-      test: ["CMD", "lsof", "-t", "-i:3001"] # Caso utilize outra porta interna para o back, altere ela aqui também
+      test: ["CMD", "lsof", "-t", "-i:3001"]  #Caso utilize outra porta interna para o back, altere ela aqui também
       timeout: 10s
       retries: 5
   db:
@@ -58,8 +49,3 @@ services:
       retries: 5
     cap_add:
       - SYS_NICE # Deve omitir alertas menores
-    networks:
-       network_backend:
-        driver: bridge
-       network_frontend:
-        driver: bridge
