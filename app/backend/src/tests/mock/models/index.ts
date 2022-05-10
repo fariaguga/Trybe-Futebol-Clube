@@ -32,9 +32,9 @@ const User = {
 };
 
 export const mockClubs = [
-  {"id": 1,"clubName": "Avaí/Kindermann"},
-  {"id": 2,"clubName": "Bahia"},
-  {"id": 3,"clubName": "Botafogo"},
+  {"id": 1,"teamName": "Avaí/Kindermann"},
+  {"id": 2,"teamName": "Bahia"},
+  {"id": 3,"teamName": "Botafogo"},
 ]
 
 export const matchsMock  = [

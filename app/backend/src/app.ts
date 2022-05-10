@@ -28,7 +28,7 @@ class App {
     this.app.use(express.json());
     this.app.use(cors());
     this.app.use('/login', Router);
-    this.app.use('/clubs', routerTeams);
+    this.app.use('/teams', routerTeams);
   }
 
   // ...
