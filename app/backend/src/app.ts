@@ -2,6 +2,7 @@ import * as express from 'express';
 import * as cors from 'cors';
 import Router from './database/routers/Router';
 import 'dotenv/config';
+import routerTeams from './database/routers/teams.router';
 
 class App {
   public app: express.Express;
@@ -27,6 +28,7 @@ class App {
     this.app.use(express.json());
     this.app.use(cors());
     this.app.use('/login', Router);
+    this.app.use('/clubs', routerTeams);
   }
 
   // ...
