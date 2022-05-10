@@ -9,6 +9,13 @@ export class LoginController {
     const response = await LoginService.login(user);
     return res.status(200).json(response);
   };
+
+  static getLogin = async (req: Request, res: Response) => {
+    const response = await LoginService.getLogin(req.body);
+    return res.status(200).json(response);
+  };
+
+  
 }
 
 export default LoginController;

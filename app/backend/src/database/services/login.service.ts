@@ -26,6 +26,10 @@ class LoginService {
     const response = { user, token };
     return response;
   };
+  static getLogin = async (email: string) => {
+    const userData = await Users.findOne({ where: { email } });
+    return userData?.role;
+  };
 }
 
 export default LoginService;

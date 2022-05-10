@@ -1,3 +1,4 @@
 bcryptjs
 @types/bcryptjs
-nodemon
+cors
+@types/cors
