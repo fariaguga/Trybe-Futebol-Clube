@@ -1,0 +1,14 @@
+[{
+    "id": 1,
+    "username": "Gustavo Faria",
+    "role": "admin",
+    "email": "gustavofaria@email.com",
+    "password": "123"
+  },
+  {
+    "id": 1,
+    "username": "Alroldo Arabelo",
+    "role": "user",
+    "email": "aroldoarabela@email.com",
+    "password": "123456"
+  }]
