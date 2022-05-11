@@ -50,10 +50,5 @@ Matches.init({
   timestamps: false,
 });
 
-Matches.belongsTo(Teams, { foreignKey: 'homeTeam', as: 'homeTeam' });
-Matches.belongsTo(Teams, { foreignKey: 'awayTeam', as: 'awayTeam' });
-
-Teams.hasMany(Matches, { foreignKey: 'homeTeam', as: 'homeTeam' });
-Teams.hasMany(Matches, { foreignKey: 'awayTeam', as: 'awayTeam' });
 
 export default Matches;
