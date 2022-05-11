@@ -5,3 +5,11 @@ export interface IUser {
     password: string,
     role: string,
   }
+
+  export interface IMatch {
+    homeTeam: number,
+    awayTeam: number,
+    homeTeamGoals: number,
+    awayTeamGoals: number,
+    inProgress: boolean,
+  }
