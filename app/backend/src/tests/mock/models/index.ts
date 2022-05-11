@@ -45,11 +45,11 @@ export const matchsMock  = [
     awayTeam: 8,
     awayTeamGoals: 1,
     inProgress: false,
-    homeClub: {
-      clubName: "São Paulo"
+    teamHome: {
+      teamName: "São Paulo"
     },
-    awayClub: {
-      clubName: "Grêmio"
+    teamAway: {
+      teamName: "Grêmio"
     }
   },
   {
@@ -59,11 +59,11 @@ export const matchsMock  = [
     awayTeam: 14,
     awayTeamGoals: 1,
     inProgress: false,
-    homeClub: {
-      clubName: "Internacional"
+    teamHome: {
+      teamName: "Internacional"
     },
-    awayClub: {
-      clubName: "Santos"
+    teamAway: {
+      teamName: "Santos"
     }
   },
   {
@@ -73,11 +73,11 @@ export const matchsMock  = [
     awayTeam: 11,
     awayTeamGoals: 0,
     inProgress: false,
-    homeClub: {
-      clubName: "Corinthians",
+    teamHome: {
+      teamName: "Corinthians",
     },
-    awayClub: {
-      clubName: "Napoli-SC",
+    teamAway: {
+      teamName: "Napoli-SC",
     },
   },
   {
@@ -87,11 +87,11 @@ export const matchsMock  = [
     awayTeam: 2,
     awayTeamGoals: 0,
     inProgress: false,
-    homeClub: {
-      clubName: "Botafogo",
+    teamHome: {
+      teamName: "Botafogo",
     },
-    awayClub: {
-      clubName: "Bahia",
+    teamAway: {
+      teamName: "Bahia",
     },
   },
   {
@@ -101,11 +101,11 @@ export const matchsMock  = [
     awayTeam: 10,
     awayTeamGoals: 1,
     inProgress: false,
-    homeClub: {
-      clubName: "Flamengo",
+    teamHome: {
+      teamName: "Flamengo",
     },
-    awayClub: {
-      clubName: "Minas Brasília",
+    teamAway: {
+      teamName: "Minas Brasília",
     },
   },
   {
@@ -115,11 +115,11 @@ export const matchsMock  = [
     awayTeam: 13,
     awayTeamGoals: 1,
     inProgress: false,
-    homeClub: {
-      clubName: "Cruzeiro",
+    teamHome: {
+      teamName: "Cruzeiro",
     },
-    awayClub: {
-      clubName: "Real Brasília",
+    teamAway: {
+      teamName: "Real Brasília",
     },
   },
   {
@@ -129,11 +129,11 @@ export const matchsMock  = [
     awayTeam: 6,
     awayTeamGoals: 2,
     inProgress: false,
-    homeClub: {
-      clubName: "Palmeiras",
+    teamHome: {
+      teamName: "Palmeiras",
     },
-    awayClub: {
-      clubName: "Ferroviária",
+    teamAway: {
+      teamName: "Ferroviária",
     },
   },
   {
@@ -143,11 +143,11 @@ export const matchsMock  = [
     awayTeam: 1,
     awayTeamGoals: 1,
     inProgress: false,
-    homeClub: {
-      clubName: "São José-SP",
+    teamHome: {
+      teamName: "São José-SP",
     },
-    awayClub: {
-      clubName: "Avaí/Kindermann",
+    teamAway: {
+      teamName: "Avaí/Kindermann",
     },
   },
   {
@@ -157,11 +157,11 @@ export const matchsMock  = [
     awayTeam: 12,
     awayTeamGoals: 3,
     inProgress: false,
-    homeClub: {
-      clubName: "Avaí/Kindermann",
+    teamHome: {
+      teamName: "Avaí/Kindermann",
     },
-    awayClub: {
-      clubName: "Palmeiras",
+    teamAway: {
+      teamName: "Palmeiras",
     },
   },
   {
@@ -171,11 +171,11 @@ export const matchsMock  = [
     awayTeam: 9,
     awayTeamGoals: 2,
     inProgress: false,
-    homeClub: {
-      clubName: "Bahia",
+    teamHome: {
+      teamName: "Bahia",
     },
-    awayClub: {
-      clubName: "Internacional",
+    teamAway: {
+      teamName: "Internacional",
     },
   },
 ]
