@@ -4,6 +4,7 @@ import Router from './database/routers/Router';
 import 'dotenv/config';
 import routerTeams from './database/routers/teams.router';
 import routerMatches from './database/routers/matches.router';
+import routerLeaderBoard from './database/routers/leaderBoarder.router';
 
 class App {
   public app: express.Express;
@@ -31,6 +32,7 @@ class App {
     this.app.use('/login', Router);
     this.app.use('/teams', routerTeams);
     this.app.use('/matches', routerMatches);
+    this.app.use('/leaderboard', routerLeaderBoard);
   }
 
   // ...
